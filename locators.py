@@ -14,9 +14,8 @@ class ConstructorLocators:
     BUNS_TAB = (By.XPATH, "//span[text()='Булки']")
     SAUCES_TAB = (By.XPATH, "//span[text()='Соусы']")
     TOPPINGS_TAB = (By.XPATH, "//span[text()='Начинки']")
-    ACTIVE_TAB = (By.CSS_SELECTOR, ".tab_tab_type_current__2BEPc")
+    ACTIVE_TAB = (By.XPATH, "//div[contains(@class, 'tab_tab_type_current__')]//span")
 
 class ProfileLocators:
     LOGOUT_BUTTON = (By.XPATH, "//button[text()='Выход']")
     PROFILE_LINK = (By.XPATH, "//a[text()='Профиль']")
-
